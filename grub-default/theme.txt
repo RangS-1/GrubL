@@ -1,0 +1,107 @@
+# Global
+
+title-text: ""
+desktop-image: "background.png"
+
+# Terminal for Console and Options
+terminal-border: "20"
+terminal-left: "10%"
+terminal-top: "10%+23"
+terminal-width: "80%"
+terminal-height: "80%"
+terminal-box: "icons/term_*.png"
+terminal-font: "TerminusBold"
+
++ boot_menu {
+	left = 10%-297 
+	top = 40%+14
+	width = 600
+	height = 500
+	item_font = "TerminusBold"
+	item_color = "#ffffff"
+	selected_item_color = "#ffffa0"
+	item_height = 34
+	item_padding = 0
+	item_spacing = 33
+	scrollbar = true
+}
+
++ boot_menu {
+	left = 10%-300
+	top = 40%
+# BUTTON SIZE
+	width = 450
+	height = 500
+# SHOW TEXT MENU SHADOW
+#	item_font = "TerminusBold"
+#	item_color = "#383838"
+#	selected_item_color = "#3f3f28"
+	item_height = 30
+	item_padding = 0
+	item_spacing = 38
+# SELECTED ITEM
+	item_pixmap_style = "icons/button/item_*.png"
+# HOVER SELECTED ITEM
+	selected_item_pixmap_style = "icons/button_hover/selected_item_*.png"
+	scrollbar = false
+}
+
+# TEXT 
+#+ label {	
+#	left = 6
+#	top = 93%
+#	height = 54
+#	width = 200
+#	text = " Default-Grub"
+#	font = "TerminusBold"
+#	color = "#9F59FF"
+#}
+
+# SHADOW 
+#+ label {
+#	left = 9
+#	top = 100%-58
+#	height = 54
+#	width = 200
+#	text = "Default-Grub"
+#	font = "TerminusBold"
+#	color = "#3f3f3f"
+#}
+
+# COUNT DOWN GRUB
++ label {
+	id = "__timeout__"
+	left = 50%
+	top = 100%-31
+	height = 24
+	width = 50%-6	
+	text = "Grub closed in %d seconds"
+	align = "right"
+	font = "TerminusBold"
+	color = "#9F59FF"
+}
+
+# SHADOW 
+#+ label {
+#	id = "__timeout__"
+#	left = 50%+3
+#	top = 100%-28
+#	height = 24
+#	width = 50%-6
+#	text = "Grub Closed in %d seconds"
+#	align = "right"
+#	font = "TerminusBold"
+#	color = "#3f3f3f"
+#}
+
+#TEXT OPTIONS AND CONSOLE
++ label {
+	id = "__bar__"
+	left = 6 
+	top = 95%
+	text = "[E]Options [C]Console"
+#	align = "right"
+	font = "TerminusBold"
+	color = "#9F59FF"
+}
+
